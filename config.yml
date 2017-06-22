@@ -1,3 +1,2 @@
 wikimum:
-  opbeat: https://opbeat.com/integration/deployment/heroku/<%= ENV["OPBEAT_TOKEN"] %>
   slack: https://starkast.slack.com/services/hooks/heroku?token=<%= ENV["SLACK_TOKEN"] %>
