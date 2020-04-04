@@ -1,11 +1,7 @@
 source "https://rubygems.org"
 
-ruby '2.0.0'
+ruby File.read(".ruby-version").chomp
 
-gem 'sinatra'
-gem 'httparty'
-
-group :development do
-  gem 'shotgun'
-  gem 'pry'
-end
+gem "puma"
+gem "sinatra"
+gem "httparty"

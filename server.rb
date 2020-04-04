@@ -14,11 +14,18 @@ helpers do
     request.logger
   end
   def config
+    # https://devcenter.heroku.com/articles/deploy-hooks#http-post-hook
+    # app is one of the params set by heroku
     settings.config[params['app']] || {}
   end
 end
 
 get '/' do
+  status 200
+  "ok"
+end
+
+post '/test' do
   status 200
   "ok"
 end

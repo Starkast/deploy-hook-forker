@@ -1,2 +1,4 @@
 wikimum:
   slack: https://starkast.slack.com/services/hooks/heroku?token=<%= ENV["SLACK_TOKEN"] %>
+test:
+  test: http://localhost:9292/test?test=123
